@@ -40,5 +40,5 @@ UNICORN_AFL ?= yes
 ################################################################################
 # Enable debug logging for unicornafl
 #
-AFL_DEBUG ?= yes
+AFL_DEBUG ?= no
 

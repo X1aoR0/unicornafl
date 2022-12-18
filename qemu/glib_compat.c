@@ -1212,7 +1212,7 @@ guint g_hash_table_size(GHashTable *hash_table)
 
 void g_free(gpointer ptr)
 {
-	fprintf(stderr,"[!] g_free b called %p\n",ptr);
+	//fprintf(stderr,"[!] g_free b called %p\n",ptr);
    free(ptr);
 }
 
@@ -1221,7 +1221,7 @@ gpointer g_malloc(size_t size)
    void *res;
     if (size == 0) return NULL;
    res = malloc(size);
-   fprintf(stderr,"[!] g_malloc b called %p\n",res);
+   //fprintf(stderr,"[!] g_malloc b called %p\n",res);
    if (res == NULL) exit(1);
    return res;
 }
@@ -1249,7 +1249,7 @@ gpointer g_realloc(gpointer ptr, size_t size)
       return NULL;
    }
    res = realloc(ptr, size);
-   fprintf(stderr,"[!] g_realloc be called %p\n",res);
+   //fprintf(stderr,"[!] g_realloc be called %p\n",res);
    if (res == NULL) exit(1);
    return res;
 }
